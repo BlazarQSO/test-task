@@ -19,9 +19,7 @@ const App = () => {
     };
 
     return (
-        <button type="button" onClick={onClick}>
-            {count}
-        </button>
+        <button type="button" onClick={onClick}>{count}</button>
     );
 };
 
