@@ -1,0 +1,13 @@
+@import "~normalize.css";
+@import "./styles/font-faces.css";
+body {
+    background-color: beige;
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+    background-image: url("./assets/icons/image.jpg");
+    background-size: cover;
+    height: 600px;
+    width: 1000px;
+}
