@@ -24,10 +24,9 @@
         "react",
         "@typescript-eslint"
     ],
-    "rules": {
-        "react/jsx-filename-extension": [
-            2,
-            {
+    "settings": {
+        "import/resolver": {
+            "node": {
                 "extensions": [
                     ".js",
                     ".jsx",
@@ -35,11 +34,21 @@
                     ".tsx"
                 ]
             }
+        }
+    },
+    "rules": {
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "ts": "never",
+                "tsx": "never"
+            }
         ],
         "max-len": [
             2,
             {
-                "code": 80,
+                "code": 120,
                 "tabWidth": 4,
                 "ignoreUrls": true
             }
@@ -57,6 +66,17 @@
             "warn",
             {
                 "varsIgnorePattern": "^_"
+            }
+        ],
+        "react/jsx-filename-extension": [
+            2,
+            {
+                "extensions": [
+                    ".js",
+                    ".jsx",
+                    ".ts",
+                    ".tsx"
+                ]
             }
         ],
         "react/jsx-one-expression-per-line": "off",
